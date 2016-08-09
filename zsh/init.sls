@@ -16,6 +16,7 @@ ohmyzsh:
   git:
     - latest
     - name: {{ datamap.ohmyzsh.src }}
+    - force_reset: true
     - rev: master
     - target: /usr/local/share/oh-my-zsh
 {% endif %}
