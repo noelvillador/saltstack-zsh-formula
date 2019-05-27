@@ -9,7 +9,6 @@ extend: {{ datamap.sls_extend|default({}) }}
 zsh:
   pkg:
     - installed
-    - pkgs: {{ datamap.pkgs }}
 
 {% if datamap.ohmyzsh.setup|default(False) %}
 ohmyzsh:
